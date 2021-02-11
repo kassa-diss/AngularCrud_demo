@@ -7,15 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http'
 
-import { NavbarComponent } from './Componants/navbar/navbar.component';
-import { FooterComponent } from './Componants/footer/footer.component';
+
 import { CountryListComponent } from './Componants/country-list/country-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
     CountryListComponent
   ],
   imports: [
