@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Country } from 'src/app/country';
 import { CountryService } from 'src/app/country.service';
 
@@ -13,7 +14,8 @@ export class CountryListComponent implements OnInit {
 
   countries!: Country[]; 
 
-  constructor(private countryService: CountryService) { }
+  constructor(private countryService: CountryService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.getCountries();
@@ -23,6 +25,11 @@ export class CountryListComponent implements OnInit {
     this.countryService.getCountrylist().subscribe(data =>{
       this.countries = data ;
     });
+  }
+
+  updateCountry(id: number){
+    this.router.navigate([ 'update-country', id]);
+
   }
 
 }

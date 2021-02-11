@@ -10,13 +10,15 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { CountryListComponent } from './Componants/country-list/country-list.component';
 import { CreateCountryComponent } from './Componants/create-country/create-country.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { UpdateCountryComponent } from './Componants/update-country/update-country.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     CountryListComponent,
-    CreateCountryComponent
+    CreateCountryComponent,
+    UpdateCountryComponent
   ],
   imports: [
     BrowserModule,

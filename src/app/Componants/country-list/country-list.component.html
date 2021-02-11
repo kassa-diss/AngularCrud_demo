@@ -6,12 +6,16 @@
         <tr>
             <th> Country Name </th>
             <th> Capacity </th>
+            <th> Actions </th>
         </tr>
     </thead>
     <tbody>
         <tr *ngfor = "let country of countries">
             <td> {{ country.country_name}} </td>
             <td> {{ country.capacity}} </td>
+            <td>
+                <button (click) = "updateCountry(country.id)" class ="btn btn-info">Update</button>
+            </td>
 
         </tr>
     </tbody>

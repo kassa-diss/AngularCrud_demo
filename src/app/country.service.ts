@@ -23,5 +23,9 @@ export class CountryService {
     return this.httpclient.post('${this.baseUrl}', country);
   }
 
+  getCountryById(id:number): Observable<Country>{
+    return this.httpclient.get<Country>('${this.baseURL}/${id}');
+  }
+
 
 }
