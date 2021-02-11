@@ -9,17 +9,21 @@ import { HttpClientModule } from '@angular/common/http'
 
 
 import { CountryListComponent } from './Componants/country-list/country-list.component';
+import { CreateCountryComponent } from './Componants/create-country/create-country.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
     AppComponent,
-    CountryListComponent
+    CountryListComponent,
+    CreateCountryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

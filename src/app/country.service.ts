@@ -18,4 +18,10 @@ export class CountryService {
   getCountrylist(): Observable<Country[]>{
     return this.httpclient.get<Country[]>('${this.baseURl}');
   }
+
+  createCountry(country: Country): Observable<object>{
+    return this.httpclient.post('${this.baseUrl}', country);
+  }
+
+
 }

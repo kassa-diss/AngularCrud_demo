@@ -1,7 +1,7 @@
 export class Country {
 
    id!: number;
-   coutry_name!: string;
+   country_name!: string;
    capacity!: number;
 
 }
